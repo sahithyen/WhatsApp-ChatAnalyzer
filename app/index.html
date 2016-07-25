@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp ChatAnalyzer</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+
+    <div class="intro">
+      <div class="jumbotron">
+        <h1>WhatsApp ChatAnalyzer</h1>
+        <p>Begin by dropping a chat file in the window</p>
+      </div>
+
+      <h2>How can I get a chat file?</h2>
+
+      <h2>What is this all about?</h2>
+      <p>
+        This application will create some statistics about your writing habits by analyzing your chat. It's something to laugh about.
+      </p>
+
+      <h2>Why?</h2>
+      <p>
+        I was curious about my writing habits with a friend of mine. After I wrote this program I wanted to share it with the rest of the world.
+      </p>
+
+      <h2>Will you get my data?</h2>
+      <p>
+        Nope, there is no reason to. It won't leave your computer at anytime.
+      </p>
+    </div>
+
+    <div class="results">
+      <div class="page-header">
+        <h1>Statistics <small>about your chatting habits</small></h1>
+      </div>
+
+      <p class="lead">
+        This statistics are created to laugh about our writing habits. Don't use it for any negotiations! If you want to analyze another chat, just drag another file in this window.
+      </p>
+
+      <div class="statistic involvement-ratio">
+        <h2>Involvement ratio</h2>
+
+        <canvas class="chart"></canvas>
+      </div>
+
+      <div class="statistic most-used-emojis">
+        <h2>Most used emojis</h2>
+
+        <canvas class="chart"></canvas>
+      </div>
+
+      <div class="statistic frequency-per-year">
+        <h2>Frequency per year</h2>
+
+        <canvas class="chart"></canvas>
+      </div>
+
+      <div class="statistic frequency-per-month">
+        <h2>Frequency per month</h2>
+
+        <canvas class="chart"></canvas>
+      </div>
+    </div>
+
+    <footer>
+      <hr>
+      <div class="clearfix">
+        <span class="pull-left">
+          Created with &#x2615; and &#x1F369;
+        </span>
+
+        <span class="pull-right">
+          Made by <a href="http://github.com/sahithyen" target="_blank">sahithyen</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script src="./js/zip.js" charset="utf-8"></script>
+<script src="./js/cash.min.js" charset="utf-8"></script>
+<script src="./js/velocity.min.js" charset="utf-8"></script>
+<script src="./js/Chart.min.js" charset="utf-8"></script>
+<script>
+  const reqwest = require('./js/reqwest.min.js')
+  require('./js/script.js')
+</script>
+
+</html>
